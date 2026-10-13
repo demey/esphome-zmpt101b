@@ -35,6 +35,8 @@ sensor:
     adc_id: zmpt_adc
     frequency: 50
     sensitivity: 8.36
+    measurement_duration: 100ms   # Sampling window per measurement (optional)
+    update_interval: 60s          # How often to measure (optional)
 ```
 
 ### Why declare the ADC sensor separately?
