@@ -21,6 +21,7 @@ CONFIG_SCHEMA = sensor.sensor_schema(
     unit_of_measurement="V",
     accuracy_decimals=1,
     state_class="measurement",
+    device_class="voltage",
 ).extend({
     cv.GenerateID(): cv.declare_id(ZMPT101BSensor),
     cv.Required(CONF_ADC_ID): cv.use_id(ADCSensor),
